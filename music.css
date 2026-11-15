@@ -1,0 +1,107 @@
+:root {
+  --bg-dark: #330a0a;      /* deep maroon background */
+  --text-dim: #b56b5c;     /* muted salmon for non-active lines */
+  --text-active: #ffffff;  /* bright white for the current/highlighted line */
+  --sidebar-bg: #1a1a1a;   /* near-black sidebar */
+}
+body {
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  font-family: 'Baloo 2', sans-serif; /* or whatever bold rounded font you like */
+}
+
+.main-content {
+  flex: 3;
+  padding: 40px;
+}
+
+.sidebar {
+  flex: 1;
+  background: var(--sidebar-bg);
+  padding: 20px;
+  color: white;
+}
+.line {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.line.active {
+  color: var(--text-active);
+}
+.sidebar img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sidebar h4 {
+  margin: 10px 0 0;
+}
+
+.sidebar p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+hr {
+  border: none;
+  height: 2px;
+  background: #b56b5c;
+  width: 100%;
+}
+#pantera-cover {
+  position: relative;
+  top: -1230px;    /* negative = up, positive = down */
+  left: -300px;     /* negative = left, positive = right */
+    width: 250px;  
+}
+#pantera-2nd-cover {
+  position: relative;
+  top: -1480px;    /* negative = up, positive = down */
+  left: -600px;     /* negative = left, positive = right */
+    width: 255px;  
+}
+#macdemarco-cover {
+  position: relative;
+  top: -1440px;    /* negative = up, positive = down */
+  left: -600px;     /* negative = left, positive = right */
+    width: 250px;  
+}
+#macdemarco-2nd-cover {
+  position: relative;
+  top: -1696px;    /* negative = up, positive = down */
+  left: -300px;     /* negative = left, positive = right */
+    width: 250px;  
+}
+#cardigans-cover {
+  position: relative;
+  top: -1670px;    /* negative = up, positive = down */
+  left: -300px;     /* negative = left, positive = right */
+    width: 250px;  
+}
+#cardigans-2nd-cover {
+  position: relative;
+  top: -1920px;    /* negative = up, positive = down */
+  left: -600px;     /* negative = left, positive = right */
+    width: 250px;  
+}
+.sidebar img,
+.main-content img {
+  transition: transform 0.2s ease;
+}
+
+.sidebar img:hover,
+.main-content img:hover {
+  transform: scale(1.05);
+}
+img {
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
